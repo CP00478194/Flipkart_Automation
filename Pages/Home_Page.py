@@ -30,6 +30,11 @@ class Home_Page(Base):
     serach_box = "//input[@name='q']"
     cross_sign = "//button[@class='_2KpZ6l _2doB4z']"
     title = "//div[@class='_3qX0zy']"
+<<<<<<< HEAD
+=======
+    My_account = "//div[text()='My Account']"
+    logout = "//div[contains(text(),'Logout')]"
+>>>>>>> 30bf075 (Logout_Function)
 
     def select_grocery(self):
         self.click_on_element(self.Grocery)
@@ -74,6 +79,14 @@ class Home_Page(Base):
     def back_to_old_window(self):
         self.back_to_parent_window()
 
+<<<<<<< HEAD
+=======
+    def logout_functionality(self):
+        my_account = self.driver.find_element(By.XPATH, self.My_account)
+        self.hover_on_element(my_account)
+        self.click_on_element(self.logout)
+
+>>>>>>> 30bf075 (Logout_Function)
 
 
 
